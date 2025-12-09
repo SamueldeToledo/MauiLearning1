@@ -14,13 +14,9 @@ public partial class Arquivos : ContentPage
     public Arquivos()
     {
         InitializeComponent();
-        PopulaCards();
-        #region estilização de labels
+        #region estilização de labels e cards
         SetBold(LblArchives, "Archives", "");
-        //SetBold(LblFileName, "File Name:", "Samuel.PDF");
-        //SetBold(LblAuthor, "Author:", "Samuel de toledo");
-        //SetBold(LblData, "Data:", "2025-12-01");
-        //SetBold(LblType, "Type:", "PDF");
+        PopulaCards();
         #endregion
 
 
