@@ -6,8 +6,14 @@ public partial class InitialPage : ContentPage
     public InitialPage()
     {
         InitializeComponent();
+        RetornaLogin();
+        
+    }
 
-        var login = SecureStorage.Default.GetAsync("Login").Result;
+    private async void RetornaLogin()
+    {
+        var login = await SecureStorage.Default.GetAsync("Login");
+
         if (!string.IsNullOrEmpty(login))
             HabilitaBemVindo();
 
