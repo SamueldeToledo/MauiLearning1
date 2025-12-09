@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiLearning1.InitialPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <VerticalStackLayout HorizontalOptions="Center" Spacing="10">
+        <Label
+            Margin="80,0"
+            CharacterSpacing="5"
+            FontSize="25"
+            Text="Bem - Vindo" />
+        <Label
+            Margin="170,0,0,10"
+            CharacterSpacing="5"
+            FontSize="25"
+            Text="Ao" />
+        <Label
+            x:Name="lblArchiveManipulator"
+            CharacterSpacing="5"
+            FontSize="25"
+            TextType="Html" />
+        <Entry
+            x:Name="ELogin"
+            Margin="0,50"
+            Placeholder="Login"
+            PlaceholderColor="#2d2c25" />
+        <Entry
+            x:Name="ESenha"
+            IsPassword="True"
+            Placeholder="Senha"
+            PlaceholderColor="#2d2c25" />
+        <Button
+            x:Name="BtnLogin"
+            Margin="0,30"
+            BackgroundColor="#5f4f7d"
+            Clicked="Button_Clicked"
+            Text="Login" />
+        <Label
+            x:Name="LblBemVindo"
+            Margin="0,60"
+            CharacterSpacing="5"
+            FontSize="25"
+            TextType="Html" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiLearning1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiLearning1"
+    Title="MauiLearning1">
+
+    <!--<TabBar>
+        <Tab Title="Arquivos">
+            <ShellContent ContentTemplate="{DataTemplate local:Arquivos}" />
+        </Tab>
+        <Tab Title="Configurações">
+            <ShellContent ContentTemplate="{DataTemplate local:Configuracoes}" />
+        </Tab>
+    </TabBar>-->
+    <FlyoutItem Title="Principal">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:InitialPage}" Route="InitialPage" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Archives" Icon="folder.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Arquivos}" Route="Arquivos" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Configurations">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:Configuracoes}" Route="Configuracoes" />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>
